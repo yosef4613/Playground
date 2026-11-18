@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <script>
+      /* On GitHub Pages there is no server: open the static preview instead. */
+      if (/\.github\.io$/.test(location.hostname)) location.replace("preview/" + location.hash);
+    </script>
     <title>GeminIsland</title>
     <meta
       name="description"
